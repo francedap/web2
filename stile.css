@@ -1,0 +1,112 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.sfondo {
+    background-color: #0D0D0D;
+    
+}
+
+.contenitorigrossi{
+    border-radius: 15px;
+    background-color: #1a1a1a;
+    padding: 10px;
+    margin: 10px;
+}
+.bottone {
+    color: #00FFFF;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+}
+.bottonelog{
+    color: #0D0D0D;
+    background-color: #00FFFF;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+}
+.bottone:hover {
+    color: #0D0D0D;
+    background-color: #00FFFF;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bottonelog:hover {
+    color: #00FFFF;
+    background-color: #0d0d0d00;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bottone:not(:last-child) {
+    margin-right: 5px; /* Aggiunge margine solo tra i bottoni */
+}
+.logo{
+    color: #00FFFF;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo:hover {
+    color: #0D0D0D;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.scritta{
+    color: #00FFFF;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.testo{
+    color: #E0E0E0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tabellina{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #E0E0E0;
+    background-color: #1a1a1a;
+    font-size: 18px;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #00FFFF;
+}
+.tabellina th, .tabellina td {
+    padding: 10px;
+}
+.tabellina tr:not(:last-child) td {
+    border-bottom: 1px solid #00FFFF; 
+}
+.tabellina th {
+    border-bottom: 1px solid #00FFFF;
+}
+
+.icona {
+    width: 30px; 
+    height: 30px; 
+    object-fit: cover; 
+}
+
+.iconanumero {
+    width: 20px; 
+    height: 20px; 
+    object-fit: cover; 
+}

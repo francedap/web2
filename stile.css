@@ -2,11 +2,15 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
 
+
+
 .sfondo {
     background-color: #0D0D0D;
-    
 }
 
+input {
+    font-family: 'Montserrat', sans-serif;
+}
 .contenitorigrossi{
     border-radius: 15px;
     background-color: #1a1a1a;
@@ -17,10 +21,10 @@ body {
     color: #00FFFF;
     text-decoration: none;
     margin-right: 10px;
-    margin-left: 10px;
     font-family: 'Montserrat', sans-serif;
     white-space: nowrap;
 }
+
 .bottonelog{
     color: #0D0D0D;
     background-color: #00FFFF;
@@ -74,6 +78,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     margin-left: 10px;
+    margin-right: 10px;
+}
+.testoall{
+    color: #E0E0E0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     margin-right: 10px;
 }
 

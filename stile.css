@@ -31,6 +31,14 @@ input {
     padding: 10px;
     margin: 10px;
 }
+
+.contscrittaindex{
+    display: flex; /* Attiva Flexbox */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Assicurati che il div abbia un'altezza */
+    text-align: center; /* Centra il testo */
+}
 .bottone {
     color: #00FFFF;
     text-decoration: none;
@@ -74,9 +82,11 @@ input {
     margin-right: 10px;
 }
 .logo:hover {
-    color: #0D0D0D;
+    color: #00FFFF;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
 }
 
 .scritta{
@@ -110,6 +120,13 @@ input {
     
 }
 
+
+.paragindex{
+    word-wrap: break-word; /* Forza l'andare a capo */
+    overflow-wrap: break-word; /* Compatibilità aggiuntiva */
+    white-space: normal; /* Permette il ritorno a capo */
+    
+}
 .tabellina{
     width: 100%;
     border-collapse: collapse;

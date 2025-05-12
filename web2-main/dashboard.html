@@ -35,7 +35,7 @@
             <a class="logo navbar-brand fs-1 fw-bold" href="index.html">D8</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span>
-                    <img src="navbartop.png" alt="Menu" style="height: 30px; width: auto;">
+                    <img src="img/navbartop.png" alt="Menu" style="height: 30px; width: auto;">
                 </span>
             </button>
         </div>
@@ -49,23 +49,33 @@
     <div class="pt-5 mt-2"></div>
     <div class="container">
         <div class="row contenitorigrossi pt-3 mt-5">
-            <div class="container pt-3 mt-3 col-sm-12">
+            <div class="contenitorigrossi pt-3 mt-3 col-sm-12">
                 <h2 class="testo fw-bold">Dashboard Utente</h2>
-                <div class="alert alert-info mt-4" role="alert">
-                    <h4 class="alert-heading">Aggiorna le tue statistiche!</h4>
-                    <p>Inserisci cosa hai mangiato oggi e aggiorna le tue statistiche giornaliere.</p>
-                    <hr>
+                <div class="contenitorigrossi alert-info mt-4" role="alert">
+                    <h4 class="testoall">Aggiorna le tue statistiche!</h4>
+                    <p class="testoallpic">I dati che inserisci servono a migliorare te stesso, non a competere falsamente.</p>
+
+                    <hr class="bg-white">  <!-- non viene visualizato come vorrei -->
                     <form>
                         <div class="mb-3">
-                            <label for="meal" class="form-label">Cosa hai mangiato oggi?</label>
-                            <input type="text" class="form-control" id="meal" placeholder="Es. Pasta, Insalata, Frutta" required>
+                            <label for="mood" class="testoallpic">Classifica:</label>
+                            <select class="form-select" id="mood" required>
+                                <option value="" disabled selected>seleziona la classifica</option>
+                                <option value="felice">passi</option>
+                                <option value="triste">pizza</option>
+                                <option value="stressato">umore</option>
+                            </select>
                         </div>
                         <div class="mb-3">
-                            <label for="steps" class="form-label">Passi effettuati:</label>
+                            <label for="meal" class="testoallpic">dove hai camminato?</label>
+                            <input type="text" class="form-control" id="meal" placeholder="Es. Città, Campagna, Misto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="steps" class="testoallpic">Passi effettuati:</label>
                             <input type="number" class="form-control" id="steps" placeholder="Es. 5000" required>
                         </div>
                         <div class="mb-3">
-                            <label for="mood" class="form-label">Umore:</label>
+                            <label for="mood" class="testoallpic">Umore:</label>
                             <select class="form-select" id="mood" required>
                                 <option value="" disabled selected>Seleziona il tuo umore</option>
                                 <option value="felice">Felice</option>
@@ -74,17 +84,10 @@
                                 <option value="rilassato">Rilassato</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-outline-info">Aggiorna Statistiche</button>
+                        <button type="submit" class="bottone btn btn-outline-info">Aggiorna Statistiche</button>
                     </form>
                 </div>
-                <div class="mt-5">
-                    <h3 class="testo fw-bold">Le tue statistiche</h3>
-                    <ul class="list-group mt-3">
-                        <li class="list-group-item">Passi di oggi: <span id="stat-steps">5000</span></li>
-                        <li class="list-group-item">Umore: <span id="stat-mood">Felice</span></li>
-                        <li class="list-group-item">Cibo consumato: <span id="stat-meal">Pasta, Insalata, Frutta</span></li>
-                    </ul>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -139,6 +142,7 @@
             </div>
             <hr class="bg-white">
             <div class="text-center">
+              
                 <p class="mb-0">&copy; 2025 D8. Tutti i diritti riservati.</p>
             </div>
         </div>
